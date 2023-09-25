@@ -15,6 +15,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setSupportActionBar(findViewById(R.id.toolbar))
+        supportActionBar?.title = getString(R.string.artist_name)
+        supportActionBar?.subtitle = getString(R.string.monthly_listeners)
+
+
         val tourList = ArrayList<TourData>()
         tourList.add(TourData("Concord", "Charlotte Motor Speedway", "Sep", "29", "Fri", "4:00 PM"))
         tourList.add(TourData("Santiago", "Teatro Coliseo", "Oct", "12", "Thu", "8:00 PM"))
