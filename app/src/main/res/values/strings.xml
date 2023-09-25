@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">exercise1</string>
+    <string name="artist_name">Porter Robinson</string>
+    <string name="monthly_listeners">2,165,425 monthly listeners</string>
+    <string name="header_discography">Discography</string>
+    <string name="header_on_tour">On Tour</string>
+    <string name="purchase">Purchase</string>
+
+
+
+</resources>
