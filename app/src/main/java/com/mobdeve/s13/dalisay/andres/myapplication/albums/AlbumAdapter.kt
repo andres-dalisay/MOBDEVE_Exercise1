@@ -19,8 +19,6 @@ class AlbumAdapter(private val data: ArrayList<AlbumData>) : RecyclerView.Adapte
         // Load and display the image using Glide (replace "imageView" with your ImageView ID)
         Glide.with(holder.itemView.context)
             .load(currentItem.albumCoverPosition)
-            .placeholder(R.drawable.image_album_spitfire) // Placeholder image while loading
-            .error(R.drawable.image_album_shelter)
             .into(holder.albumCoverImageView)
     }
 

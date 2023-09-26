@@ -6,5 +6,6 @@ data class TourData(
     val tourDateMonth: String,
     val tourDateDay: String,
     val tourDayOfWeek: String,
-    val tourTime: String) {
+    val tourTime: String,
+    var isPurchased: Boolean = false) {
 }

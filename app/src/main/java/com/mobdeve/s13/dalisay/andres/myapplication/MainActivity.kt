@@ -2,18 +2,39 @@ package com.mobdeve.s13.dalisay.andres.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.mobdeve.s13.dalisay.andres.myapplication.albums.AlbumAdapter
 import com.mobdeve.s13.dalisay.andres.myapplication.albums.AlbumData
 import com.mobdeve.s13.dalisay.andres.myapplication.tours.TourAdapter
 import com.mobdeve.s13.dalisay.andres.myapplication.tours.TourData
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var fab: FloatingActionButton
+    private var isFavorited = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        fab = findViewById(R.id.favorite_button)
+
+        fab.setOnClickListener {
+            // Toggle the FAB's state
+            isFavorited = !isFavorited
+
+            // Change the FAB's icon or behavior based on the state
+            if (isFavorited) {
+                fab.setImageDrawable(ContextCompat.getDrawable(applicationContext, R.drawable.star_filled)) // Change to close icon
+                // Perform actions when FAB is expanded
+            } else {
+                fab.setImageDrawable(ContextCompat.getDrawable(applicationContext, R.drawable.star)) // Change back to the original icon
+                // Perform actions when FAB is collapsed
+            }
+        }
 
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.title = getString(R.string.artist_name)

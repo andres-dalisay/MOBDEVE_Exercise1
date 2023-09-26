@@ -3,7 +3,6 @@ package com.mobdeve.s13.dalisay.andres.myapplication.tours
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.mobdeve.s13.dalisay.andres.myapplication.R
 
 class TourAdapter(private val data: ArrayList<TourData>) : RecyclerView.Adapter<TourViewHolder>() {
@@ -22,6 +21,17 @@ class TourAdapter(private val data: ArrayList<TourData>) : RecyclerView.Adapter<
         holder.tourDateDay.text = currentItem.tourDateDay
         holder.tourDayOfWeek.text = currentItem.tourDayOfWeek
         holder.tourTime.text = currentItem.tourTime
+
+        if (currentItem.isPurchased){
+            holder.tourPurchaseButton.isEnabled = false
+            holder.tourPurchaseButton.text = "Purchased"
+        } else {
+            holder.tourPurchaseButton.isEnabled = true
+            holder.tourPurchaseButton.setOnClickListener{
+                currentItem.isPurchased = true
+                notifyDataSetChanged()
+            }
+        }
     }
 
     override fun getItemCount() = data.size
