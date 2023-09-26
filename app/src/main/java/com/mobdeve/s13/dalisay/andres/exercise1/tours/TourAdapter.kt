@@ -1,9 +1,9 @@
-package com.mobdeve.s13.dalisay.andres.myapplication.tours
+package com.mobdeve.s13.dalisay.andres.exercise1.tours
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.mobdeve.s13.dalisay.andres.myapplication.R
+import com.mobdeve.s13.dalisay.andres.exercise1.R
 
 class TourAdapter(private val data: ArrayList<TourData>) : RecyclerView.Adapter<TourViewHolder>() {
 

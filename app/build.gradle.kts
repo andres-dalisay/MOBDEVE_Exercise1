@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.mobdeve.s13.dalisay.andres.myapplication"
+    namespace = "com.mobdeve.s13.dalisay.andres.exercise1"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.mobdeve.s13.dalisay.andres.myapplication"
+        applicationId = "com.mobdeve.s13.dalisay.andres.exercise1"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

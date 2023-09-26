@@ -1,4 +1,4 @@
-package com.mobdeve.s13.dalisay.andres.myapplication
+package com.mobdeve.s13.dalisay.andres.exercise1
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

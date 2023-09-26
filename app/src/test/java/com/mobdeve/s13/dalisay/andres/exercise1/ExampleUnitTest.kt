@@ -1,4 +1,4 @@
-package com.mobdeve.s13.dalisay.andres.myapplication
+package com.mobdeve.s13.dalisay.andres.exercise1
 
 import org.junit.Test
 

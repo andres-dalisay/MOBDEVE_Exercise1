@@ -1,4 +1,4 @@
-package com.mobdeve.s13.dalisay.andres.myapplication
+package com.mobdeve.s13.dalisay.andres.exercise1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,10 +7,11 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.mobdeve.s13.dalisay.andres.myapplication.albums.AlbumAdapter
-import com.mobdeve.s13.dalisay.andres.myapplication.albums.AlbumData
-import com.mobdeve.s13.dalisay.andres.myapplication.tours.TourAdapter
-import com.mobdeve.s13.dalisay.andres.myapplication.tours.TourData
+import com.mobdeve.s13.dalisay.andres.exercise1.R
+import com.mobdeve.s13.dalisay.andres.exercise1.albums.AlbumAdapter
+import com.mobdeve.s13.dalisay.andres.exercise1.albums.AlbumData
+import com.mobdeve.s13.dalisay.andres.exercise1.tours.TourAdapter
+import com.mobdeve.s13.dalisay.andres.exercise1.tours.TourData
 
 class MainActivity : AppCompatActivity() {
     private lateinit var fab: FloatingActionButton
@@ -28,7 +29,9 @@ class MainActivity : AppCompatActivity() {
 
             // Change the FAB's icon or behavior based on the state
             if (isFavorited) {
-                fab.setImageDrawable(ContextCompat.getDrawable(applicationContext, R.drawable.star_filled)) // Change to close icon
+                fab.setImageDrawable(ContextCompat.getDrawable(applicationContext,
+                    R.drawable.star_filled
+                )) // Change to close icon
                 // Perform actions when FAB is expanded
             } else {
                 fab.setImageDrawable(ContextCompat.getDrawable(applicationContext, R.drawable.star)) // Change back to the original icon

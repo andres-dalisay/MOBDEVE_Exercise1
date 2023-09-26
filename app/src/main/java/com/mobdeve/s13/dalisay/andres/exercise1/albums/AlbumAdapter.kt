@@ -1,10 +1,10 @@
-package com.mobdeve.s13.dalisay.andres.myapplication.albums
+package com.mobdeve.s13.dalisay.andres.exercise1.albums
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.mobdeve.s13.dalisay.andres.myapplication.R
+import com.mobdeve.s13.dalisay.andres.exercise1.R
 
 class AlbumAdapter(private val data: ArrayList<AlbumData>) : RecyclerView.Adapter<AlbumViewHolder>() {
 

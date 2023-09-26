@@ -1,4 +1,4 @@
-package com.mobdeve.s13.dalisay.andres.myapplication.tours
+package com.mobdeve.s13.dalisay.andres.exercise1.tours
 
 data class TourData(
     val tourCity: String,

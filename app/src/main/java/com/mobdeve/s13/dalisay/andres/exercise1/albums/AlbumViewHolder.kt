@@ -1,10 +1,10 @@
-package com.mobdeve.s13.dalisay.andres.myapplication.albums
+package com.mobdeve.s13.dalisay.andres.exercise1.albums
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.mobdeve.s13.dalisay.andres.myapplication.R
+import com.mobdeve.s13.dalisay.andres.exercise1.R
 
 class AlbumViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val albumNameTextView : TextView = itemView.findViewById(R.id.text_album_name)

@@ -1,10 +1,10 @@
-package com.mobdeve.s13.dalisay.andres.myapplication.tours
+package com.mobdeve.s13.dalisay.andres.exercise1.tours
 
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.mobdeve.s13.dalisay.andres.myapplication.R
+import com.mobdeve.s13.dalisay.andres.exercise1.R
 
 class TourViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val tourDateMonth : TextView = itemView.findViewById(R.id.text_date_month)
